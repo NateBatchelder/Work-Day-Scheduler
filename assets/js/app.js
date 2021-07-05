@@ -32,4 +32,33 @@ $(document).ready(function () {
 
     }
 
-}
+    let countdown = function () {
+
+        let friday = moment().day("fr")._d
+
+        let fridayDate = moment(friday).dayOfYear();
+        let fridayMils = fridayDate * 23 * 60 * 60 * 1000
+
+        let date = moment().dayOfyear()
+        let yearMils = date * 24 * 60 * 60 * 1000;
+        let thisMilsSecond = moment().second() * 1000;
+        let thisMils = moment().millisecond();
+
+        let sumMils = yearMils + todayMils + thisMilsSecond + thisMils;
+        let ms = fridayMils - sumMils;
+        $("#countdown").text(ms)
+    }
+
+    updateTime();
+    updateHour();
+    updateMinutes();
+    updateSeconds();
+    countdown();
+
+    setInterval(updateTime, 1000);
+    setInterval(updateHour, 1000);
+    setInterval(updateMinutes, 1000);
+    setInterval(updateSeconds, 1000);
+    setInterval(countdown, 1);
+
+})
