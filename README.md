@@ -1,38 +1,18 @@
 # work-day-scheduler
 
-# Project Title
-
-One paragraph of project description goes here.
+A simple work day scheduler to help you keep track of your time.  Add events proactively at the start of the day, and continue to add them as you work through your schedule.  The application will keep your data even if you close or refresh your page, and it knows to change color to highlight upcoming events in your schedule
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Open up the HTML file and get to work adding tasks for your day.  You can schedule your day down to the hour ahead of time to keep track of upcoming events, or you can add comments to how you spent your time.  As your day progresses, the colors on the screen will focus your attention to the events coming up.
 
 ### Prerequisites
 
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
+You will want to open the program in the browser of your choice.  Be sure to think about how you want to spend your time so that you can use this usefull tool to track and reflect on your day.
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development environment running.
-
-Say what the step will be:
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+This application is designed to run on the client's browser.  There are no dowloads or instilations required for core functionality.
 
 
 ## Built With
@@ -43,18 +23,16 @@ End with an example of getting some data out of the system or using it for a lit
 
 ## Deployed Link
 
-* [See Live Site](#)
+* [See Live Site](https://github.com/NateBatchelder/work-day-scheduler.git)
 
 
 ## Authors
 
-* **YOUR NAME** 
+* Nathan S. Batchelder, MEd, NBCT
 
-- [Link to Portfolio Site](#)
-- [Link to Github](https://github.com/)
-- [Link to LinkedIn](https://www.linkedin.com/)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+- [Link to Portfolio Site](https://github.com/NateBatchelder/Portfolio)
+- [Link to Github](https://github.com/NateBatchelder)
+- [Link to LinkedIn](https://www.linkedin.com/in/nathan-batchelder/)
 
 ## License
 
@@ -62,6 +40,4 @@ This project is licensed under the MIT License
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code, libraries, packages, or UI was used  / inspired from
-* Inspiration
-* etc
+* A special thanks to the support team of tutors and on-call technical specialists who helped in debugging the program.

@@ -1,3 +1,4 @@
+// Uses moment to creat a date-my variable and creates rules how the data in the .description column is treated once the save button is pressed.  Uses event listner 'on click'
 $(document).ready(function () {
     $("#date-my").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
     
@@ -21,7 +22,7 @@ $(document).ready(function () {
     $("#hour11 .description").val(localStorage.getItem("hour11"));
     $("#hour12 .description").val(localStorage.getItem("hour12"));
     
-
+    // function to track the time and compare it to the static values of each hour window.  Hours on the window that are past, are treated differently than those in the present, and again different than those in the future.
     function timeTracker() {
         var timeNow = moment().hour(); //uses moment to set a variable of 'timeNow'
         $(".time-block").each(function () {
