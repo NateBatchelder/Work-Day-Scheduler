@@ -1,6 +1,5 @@
-$(document).ready(function(){
-    $("#date-my").text(moment().format('MMMM Do YYYY, h:mm:ss a'));
-})
+var todayDate = moment().format('MMMM Do YYYY, h:mm:ss a');
+$("#date-my").html(todayDate);
 
 $(document).ready(function () {
     $(".saveBtn").on("click", function (){
@@ -20,33 +19,23 @@ $(document).ready(function () {
                 $(this).addClass("past");
             }
             else if (blockTime === timeNow) { // second conditional - if the event is now
+                $(this).removeClass("past");
                 $(this).removeClass("future");
                 $(this).addClass("present");
-                $(this).removeClass("past");
             }
             else { // last conditional - if the event is in the future
-                $(this).addClass("future");
                 $(this).removeClass("present");
                 $(this).removeClass("past");
+                $(this).addClass("future");
             }
         })
     }
 
-//functinality to have events persist on the page when reloading
-$("hour0700 .description").val(localStorage.getItem("hour0700"));
-$("hour0800 .description").val(localStorage.getItem("hour0800"));
-$("hour0900 .description").val(localStorage.getItem("hour0900"));
-$("hour1000 .description").val(localStorage.getItem("hour1000"));
-$("hour1100 .description").val(localStorage.getItem("hour1100"));
-$("hour1200 .description").val(localStorage.getItem("hour1200"));
-$("hour1300 .description").val(localStorage.getItem("hour1300"));
-$("hour1400 .description").val(localStorage.getItem("hour1400"));
-$("hour1500 .description").val(localStorage.getItem("hour1500"));
-$("hour1600 .description").val(localStorage.getItem("hour1600"));
-$("hour1700 .description").val(localStorage.getItem("hour1700"));
-$("hour1800 .description").val(localStorage.getItem("hour1800"));
-
-timeTracker();
+    //functinality to have events persist on the page when reloading
+    $("#hour1 .description").val(localStorage.getItem("hour7"));
+    $("#hour2 .description").val(localStorage.getItem("hour0800"));
+    
+    timeTracker();
 
 })
 
