@@ -27,7 +27,9 @@ $(document).ready(function () {
         var timeNow = moment().hour(); //uses moment to set a variable of 'timeNow'
         $(".time-block").each(function () {
             var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+            console.log(blockTime)
             // changes color of background 
+            console.log(timeNow) //expect 1600
             if (blockTime < timeNow) { // first conditional - if the event is in the past
                 $(this).removeClass("future");
                 $(this).removeClass("present");
